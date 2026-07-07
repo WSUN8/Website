@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Utah Jazz | The Wasatch to the Hardwood</title>
+<meta name="description" content="An interactive history of the Utah Jazz, starting from the Wasatch Mountain Range." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏔️</text></svg>" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-peak"></div>
+    <p>Rendering the Wasatch&hellip;</p>
+  </div>
+</div>
+
+<nav id="site-nav">
+  <a href="#hero" class="nav-brand">UTAH <span>JAZZ</span></a>
+  <button id="nav-toggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <div id="nav-links">
+    <a href="#timeline" data-section="timeline">Timeline</a>
+    <a href="#legends" data-section="legends">Legends</a>
+    <a href="#finals" data-section="finals">The Finals</a>
+    <a href="#arena" data-section="arena">The Arena</a>
+    <a href="#legacy" data-section="legacy">Legacy</a>
+  </div>
+</nav>
+
+<header id="hero">
+  <canvas id="mountain-canvas"></canvas>
+  <div id="hero-vignette"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Est. 1974 &middot; Salt Lake City, Utah</p>
+    <h1 class="hero-title">UTAH JAZZ</h1>
+    <p class="hero-subtitle">Fifty years in the shadow of the Wasatch.<br>Click the peaks. Scroll into the story.</p>
+    <div class="hero-hint" id="hero-hint">Move your mouse to look around &middot; tap a peak</div>
+  </div>
+  <div class="scroll-cue" id="scroll-cue">
+    <span>Scroll</span>
+    <div class="scroll-cue-line"></div>
+  </div>
+  <div id="peak-tooltip" class="peak-tooltip hidden"></div>
+</header>
+
+<main>
+
+  <section id="intro" class="section">
+    <div class="section-inner">
+      <h2 class="section-kicker">Before the Team</h2>
+      <p class="lede">
+        The Wasatch Range rises more than 11,000 feet above the Salt Lake Valley, a granite wall that has
+        watched over the city since long before a basketball team named for New Orleans jazz music ever
+        set foot here. In 1979, a struggling franchise moved 1,700 miles west to a valley that had never
+        heard of it &mdash; and the mountains became part of the story anyway.
+      </p>
+    </div>
+  </section>
+
+  <section id="timeline" class="section">
+    <div class="section-inner">
+      <h2 class="section-kicker">The Timeline</h2>
+      <h3 class="section-title">Fifty Seasons</h3>
+      <p class="section-desc">Click any year to open the story.</p>
+      <div id="timeline-track"></div>
+    </div>
+  </section>
+
+  <section id="legends" class="section">
+    <div class="section-inner">
+      <h2 class="section-kicker">The Legends</h2>
+      <h3 class="section-title">Faces of the Franchise</h3>
+      <p class="section-desc">Click a card to flip it.</p>
+      <div id="legends-grid"></div>
+    </div>
+  </section>
+
+  <section id="finals" class="section">
+    <div class="section-inner finals-inner">
+      <h2 class="section-kicker">1997 &amp; 1998</h2>
+      <h3 class="section-title">Two Trips to the Finals</h3>
+      <p class="lede">
+        Back-to-back Western Conference champions, back-to-back Finals defeats to Michael Jordan's
+        Chicago Bulls. Game 6, June 14, 1998, Delta Center: Jordan's final shot in a Bulls uniform,
+        a push-off debated for decades, and a Jazz team that never got a third chance.
+      </p>
+      <div class="finals-stats">
+        <div class="stat-card"><span class="stat-num">2</span><span class="stat-label">Finals appearances</span></div>
+        <div class="stat-card"><span class="stat-num">0</span><span class="stat-label">Championships</span></div>
+        <div class="stat-card"><span class="stat-num">5.2</span><span class="stat-label">Seconds left on the clock when Jordan hit "The Shot" in Game 6, 1998</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="arena" class="section">
+    <div class="section-inner">
+      <h2 class="section-kicker">Home Court</h2>
+      <h3 class="section-title">One Building, Four Names</h3>
+      <p class="section-desc">Drag the slider.</p>
+      <div id="arena-slider"></div>
+    </div>
+  </section>
+
+  <section id="legacy" class="section">
+    <div class="section-inner">
+      <h2 class="section-kicker">Today</h2>
+      <h3 class="section-title">A New Era, an Old Range</h3>
+      <p class="lede">
+        In 2020, Ryan Smith became the first Black majority owner in NBA history when he purchased the
+        Jazz. His Smith Entertainment Group has since rebuilt the roster around Lauri Markkanen and a
+        wave of young talent, brought major events like the 2023 NBA All-Star Game to Salt Lake City,
+        and revived the franchise's original purple-mountain gradient jersey &mdash; the range on the
+        chest, same as the one outside the arena doors.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer id="site-footer">
+  <p>Built as an interactive fan tribute &middot; Not affiliated with the NBA or the Utah Jazz</p>
+</footer>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "./js/vendor/three.module.js"
+  }
+}
+</script>
+<script type="module" src="js/mountains.js"></script>
+<script type="module" src="js/data.js"></script>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,4 +1,5 @@
-import { timelineData, legendsData, arenaData } from './data.js';
+import { timelineData, legendsData, arenaData, portraitLooks, jerseysData, courtMoments } from './data.js';
+import { portraitSVG, jerseySVG, courtSVG } from './graphics.js';
 
 /* ---------- nav ---------- */
 const nav = document.getElementById('site-nav');
@@ -74,9 +75,12 @@ legendsData.forEach(player => {
   card.innerHTML = `
     <div class="legend-card-inner">
       <div class="legend-face legend-front">
+        <div class="legend-portrait">${portraitSVG({ ...player, ...portraitLooks[player.number] })}</div>
         <span class="legend-number">${player.number}</span>
-        <h4 class="legend-name">${player.name}</h4>
-        <span class="legend-role">${player.role}</span>
+        <div class="legend-caption">
+          <h4 class="legend-name">${player.name}</h4>
+          <span class="legend-role">${player.role}</span>
+        </div>
       </div>
       <div class="legend-face legend-back">
         <h4 class="legend-name">${player.name}</h4>
@@ -88,6 +92,56 @@ legendsData.forEach(player => {
   card.addEventListener('click', () => card.classList.toggle('flipped'));
   grid.appendChild(card);
 });
+
+/* ---------- jersey gallery ---------- */
+const jerseyGrid = document.getElementById('jersey-grid');
+jerseysData.forEach(jersey => {
+  const card = document.createElement('div');
+  card.className = 'jersey-card';
+  card.innerHTML = `
+    <div class="jersey-art">${jerseySVG(jersey)}</div>
+    <div class="jersey-info">
+      <span class="jersey-era">${jersey.era}</span>
+      <h4 class="jersey-name">${jersey.name}</h4>
+      <span class="jersey-years">${jersey.years}</span>
+      <p class="jersey-blurb">${jersey.blurb}</p>
+    </div>
+  `;
+  // tap toggles the info on touch devices; hover handles the rest via CSS
+  card.addEventListener('click', () => {
+    const wasOpen = card.classList.contains('open');
+    jerseyGrid.querySelectorAll('.jersey-card.open').forEach(c => c.classList.remove('open'));
+    if (!wasOpen) card.classList.add('open');
+  });
+  jerseyGrid.appendChild(card);
+});
+
+/* ---------- court diagram ---------- */
+const courtFigure = document.getElementById('court-figure');
+if (courtFigure) {
+  courtFigure.innerHTML = courtSVG(courtMoments);
+  const detailLabel = document.getElementById('court-detail-label');
+  const detailText = document.getElementById('court-detail-text');
+  const detailPanel = document.getElementById('court-detail');
+  const byHotspot = Object.fromEntries(courtMoments.map(m => [m.hotspot, m]));
+
+  const selectHotspot = (el) => {
+    const moment = byHotspot[el.dataset.hotspot];
+    if (!moment) return;
+    courtFigure.querySelectorAll('.court-hotspot.active').forEach(h => h.classList.remove('active'));
+    el.classList.add('active');
+    detailLabel.textContent = moment.label;
+    detailText.textContent = moment.text;
+    detailPanel.classList.add('revealed');
+  };
+
+  courtFigure.querySelectorAll('.court-hotspot').forEach(el => {
+    el.addEventListener('click', () => selectHotspot(el));
+    el.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectHotspot(el); }
+    });
+  });
+}
 
 /* ---------- arena slider ---------- */
 const arenaRoot = document.getElementById('arena-slider');

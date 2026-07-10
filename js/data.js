@@ -146,6 +146,75 @@ export const legendsData = [
   },
 ];
 
+/* stylised-portrait looks, keyed by legend number (merged into portraitSVG) */
+export const portraitLooks = {
+  '12': { accent: '#582c83', skin: '#d8a878', hair: '#3a2416' }, // Stockton
+  '32': { accent: '#582c83', skin: '#6b4a35', hair: '#160c22' }, // Malone
+  'HC': { accent: '#1b2a4a', skin: '#cf9a6c', hair: '#8b8494' }, // Sloan (coach)
+  '27': { accent: '#582c83', skin: '#8a5a3c', hair: '#160c22' }, // Gobert
+  '45': { accent: '#582c83', skin: '#6b4630', hair: '#160c22' }, // Mitchell
+  '23': { accent: '#582c83', skin: '#e0b48c', hair: '#a9772e' }, // Markkanen
+};
+
+/* Jazz jersey eras — drives jerseySVG() in the gallery */
+export const jerseysData = [
+  {
+    era: 'The Note',
+    name: 'The Classic "Note"',
+    years: '1979–1996',
+    base: '#5c2d91', trim: '#f9a01b', wordmark: 'JAZZ', number: '7',
+    blurb: 'Purple, green and gold with the wandering musical note — the look the franchise carried west from New Orleans and wore through the early Stockton-Malone years.',
+  },
+  {
+    era: 'Mountain',
+    name: 'The Purple Mountain',
+    years: '1996–2004',
+    base: '#150a26', trim: '#8b5cf6', wordmark: 'UTAH', number: '32', hasMountain: true,
+    blurb: 'The iconic purple mountain-gradient jersey of the two Finals runs — a range across the chest to mirror the one outside the arena. Still the most beloved uniform in team history.',
+  },
+  {
+    era: 'Home White',
+    name: 'Stockton-Malone Home',
+    years: '1996–2004',
+    base: '#f4f1fa', trim: '#582c83', wordmark: 'JAZZ', number: '12',
+    numberColor: '#582c83', textColor: '#582c83',
+    blurb: 'The crisp home whites of the Finals era. No. 12 and No. 32 turned this simple purple-trimmed set into one of the most recognizable pairings the league has known.',
+  },
+  {
+    era: 'Spida',
+    name: 'The Mitchell-Era Navy',
+    years: '2016–2022',
+    base: '#0b1a3a', trim: '#f9a01b', wordmark: 'UTAH', number: '45',
+    blurb: 'Navy, gold and green marked the Donovan Mitchell and Rudy Gobert era, when "Spida" highlight dunks and the NBA-best 2020-21 season lit up a renamed Vivint Arena.',
+  },
+  {
+    era: 'Revival',
+    name: "Today's Mountain Revival",
+    years: '2023–present',
+    base: '#160a29', trim: '#f9a01b', wordmark: 'UTAH', number: '23', hasMountain: true,
+    blurb: 'Under Ryan Smith the franchise revived its purple mountain gradient — the range on the chest once more — as the modern Jazz rebuild around Lauri Markkanen.',
+  },
+];
+
+/* iconic spots on the court — drives courtSVG() hotspots */
+export const courtMoments = [
+  {
+    hotspot: 'shot',
+    label: '"The Shot" — 1998',
+    text: 'From this right wing on June 14, 1998, Michael Jordan rose over Bryon Russell with 5.2 seconds left in Game 6 and buried the jumper that won Chicago its sixth title — ending Utah\'s best chance at a championship.',
+  },
+  {
+    hotspot: 'pickroll',
+    label: 'The Pick-and-Roll',
+    text: 'The top of the key was home to the deadliest two-man game in NBA history. Stockton and Malone ran the pick-and-roll here for 18 seasons — a play defenses knew was coming and still could not stop.',
+  },
+  {
+    hotspot: 'paint',
+    label: "Gobert's Paint",
+    text: 'The restricted area belonged to Rudy Gobert. Anchoring the league\'s stingiest defense, the three-time Defensive Player of the Year turned the paint into a no-fly zone and powered Utah to the NBA\'s best record in 2020-21.',
+  },
+];
+
 export const arenaData = [
   {
     name: 'Salt Palace',

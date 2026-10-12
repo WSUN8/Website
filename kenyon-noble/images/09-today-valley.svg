@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5b8fb0"/><stop offset="1" stop-color="#cfe2e8"/>
+    </linearGradient>
+    <linearGradient id="valley" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9bb07a"/><stop offset="1" stop-color="#6f8a54"/>
+    </linearGradient>
+    <symbol id="pin" viewBox="0 0 60 84">
+      <path d="M30 84 C30 84 0 48 0 30 A30 30 0 0 1 60 30 C60 48 30 84 30 84Z" fill="#c2552f"/>
+      <circle cx="30" cy="30" r="12" fill="#f6efe0"/>
+    </symbol>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <!-- Bridgers (north) and Gallatin range -->
+  <path d="M0 380 L140 300 L260 200 L360 280 L470 180 L580 290 L720 230 L860 330 L1000 250 L1140 320 L1280 220 L1420 300 L1600 260 V900 H0Z" fill="#6d7f8c"/>
+  <path d="M260 200 L295 240 L275 238 L260 255 L245 240 L230 242Z M470 180 L505 220 L485 218 L470 235 L455 220 L440 222Z M1280 220 L1315 260 L1295 258 L1280 275 L1265 260 L1250 262Z" fill="#f4f6f4"/>
+  <path d="M0 470 Q400 420 800 460 T1600 440 V900 H0Z" fill="url(#valley)"/>
+  <!-- field rows -->
+  <g stroke="#88a06a" stroke-width="4" opacity=".7">
+    <path d="M0 560 Q800 520 1600 560 M0 640 Q800 600 1600 640 M0 730 Q800 690 1600 730 M0 820 Q800 790 1600 820"/>
+  </g>
+  <!-- I-90 ribbon -->
+  <path d="M-20 900 C300 860 560 850 800 845 S1300 820 1620 790" stroke="#4a4a48" stroke-width="22" fill="none"/>
+  <path d="M-20 900 C300 860 560 850 800 845 S1300 820 1620 790" stroke="#e8d68a" stroke-width="3" stroke-dasharray="26 22" fill="none"/>
+  <!-- towns -->
+  <g font-family="Georgia, serif" font-size="34" font-weight="700" fill="#1f3a2c" text-anchor="middle" stroke="#f6efe0" stroke-width="8" stroke-linejoin="round" paint-order="stroke">
+    <use href="#pin" x="700" y="370" width="70" height="98"/>
+    <text x="735" y="510">Belgrade</text>
+    <use href="#pin" x="940" y="490" width="86" height="120"/>
+    <text x="983" y="650" font-size="42">Bozeman</text>
+    <use href="#pin" x="1310" y="430" width="70" height="98"/>
+    <text x="1345" y="570">Livingston</text>
+  </g>
+  <!-- modern store silhouette near Bozeman -->
+  <g transform="translate(830 700)">
+    <rect width="320" height="110" fill="#e9e1cf"/>
+    <path d="M-20 0 H340 L320 -30 H0Z" fill="#1f3a2c"/>
+    <rect x="30" y="40" width="80" height="70" fill="#40626b"/>
+    <rect x="210" y="40" width="80" height="70" fill="#40626b"/>
+    <rect x="130" y="30" width="60" height="80" fill="#2b3e43"/>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9d3a8"/><stop offset="1" stop-color="#d8b480"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <path d="M0 470 L200 360 L380 430 L560 320 L760 440 L980 340 L1200 430 L1400 350 L1600 440 V900 H0Z" fill="#b8a083"/>
+  <!-- dirt street -->
+  <rect y="690" width="1600" height="210" fill="#b48a5c"/>
+  <path d="M0 760 H1600 M0 830 H1600" stroke="#9b7448" stroke-width="3" stroke-dasharray="40 30"/>
+  <!-- boardwalk -->
+  <rect x="300" y="660" width="1000" height="30" fill="#7a5233"/>
+  <!-- false-front building -->
+  <g transform="translate(380 250)">
+    <path d="M0 80 H120 V30 H720 V80 H840 V410 H0Z" fill="#a8743f"/>
+    <g stroke="#8a5c30" stroke-width="3">
+      <path d="M0 120 H840 M0 160 H840 M0 200 H840 M0 240 H840 M0 280 H840 M0 320 H840 M0 360 H840"/>
+    </g>
+    <rect x="140" y="50" width="560" height="80" fill="#f2e2c0" stroke="#5a3a22" stroke-width="6"/>
+    <text x="420" y="104" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="700" fill="#3b2a1c" letter-spacing="4">S.C. KENYON · LUMBER</text>
+    <!-- windows and door -->
+    <rect x="80" y="200" width="160" height="130" fill="#3b2a1c"/>
+    <rect x="600" y="200" width="160" height="130" fill="#3b2a1c"/>
+    <path d="M160 200 V330 M80 265 H240 M680 200 V330 M600 265 H760" stroke="#a8743f" stroke-width="6"/>
+    <rect x="360" y="190" width="120" height="220" fill="#4a3220"/>
+    <circle cx="460" cy="300" r="6" fill="#d9b26c"/>
+    <!-- awning posts -->
+    <rect x="-20" y="150" width="880" height="18" fill="#5a3a22"/>
+    <rect x="0" y="168" width="12" height="242" fill="#5a3a22"/>
+    <rect x="828" y="168" width="12" height="242" fill="#5a3a22"/>
+  </g>
+  <!-- lumber stack beside -->
+  <g fill="#d4a56a" stroke="#8a5c30" stroke-width="3">
+    <rect x="1260" y="600" width="260" height="22"/>
+    <rect x="1260" y="578" width="260" height="22"/>
+    <rect x="1260" y="556" width="260" height="22"/>
+    <rect x="1260" y="534" width="260" height="22"/>
+  </g>
+  <!-- wagon wheel -->
+  <g transform="translate(200 640)">
+    <circle r="80" fill="none" stroke="#4a3220" stroke-width="12"/>
+    <circle r="14" fill="#4a3220"/>
+    <g stroke="#4a3220" stroke-width="6">
+      <path d="M-80 0 H80 M0 -80 V80 M-57 -57 L57 57 M57 -57 L-57 57"/>
+    </g>
+  </g>
+  <rect width="1600" height="900" fill="#5a3a22" opacity=".08"/>
+</svg>

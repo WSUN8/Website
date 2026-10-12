@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <pattern id="grain" width="400" height="60" patternUnits="userSpaceOnUse">
+      <rect width="400" height="60" fill="#6b4426"/>
+      <path d="M0 15 Q100 5 200 18 T400 12 M0 40 Q120 30 220 44 T400 38" stroke="#5a3a22" stroke-width="3" fill="none"/>
+    </pattern>
+  </defs>
+  <!-- desk -->
+  <rect width="1600" height="900" fill="url(#grain)"/>
+  <!-- certificate -->
+  <g transform="translate(400 120) rotate(-3 400 330)">
+    <rect x="8" y="12" width="800" height="640" fill="#2a1d13" opacity=".35"/>
+    <rect width="800" height="640" fill="#f3e6c8"/>
+    <rect x="24" y="24" width="752" height="592" fill="none" stroke="#7a5233" stroke-width="4"/>
+    <rect x="38" y="38" width="724" height="564" fill="none" stroke="#7a5233" stroke-width="1.5"/>
+    <text x="400" y="120" text-anchor="middle" font-family="Georgia, serif" font-size="28" letter-spacing="8" fill="#5a3a22">STATE OF MONTANA</text>
+    <text x="400" y="190" text-anchor="middle" font-family="Georgia, serif" font-size="46" font-style="italic" fill="#3b2a1c">Articles of Incorporation</text>
+    <path d="M200 220 H600" stroke="#7a5233" stroke-width="2"/>
+    <text x="400" y="290" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-weight="700" letter-spacing="3" fill="#3b2a1c">KENYON-NOBLE</text>
+    <text x="400" y="340" text-anchor="middle" font-family="Georgia, serif" font-size="30" letter-spacing="6" fill="#3b2a1c">LUMBER COMPANY</text>
+    <text x="400" y="400" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#5a3a22">Bozeman, Gallatin County · 1906</text>
+    <g stroke="#9b8466" stroke-width="2">
+      <path d="M110 450 H690 M110 480 H690 M110 510 H520"/>
+    </g>
+    <path d="M140 570 q40 -40 70 0 t70 -10 t60 5" stroke="#2f2a4a" stroke-width="3" fill="none"/>
+    <path d="M460 570 q30 -35 60 -5 t60 -10 t70 10" stroke="#2f2a4a" stroke-width="3" fill="none"/>
+    <!-- wax seal -->
+    <g transform="translate(680 540)">
+      <circle r="58" fill="#8e2a22"/>
+      <circle r="44" fill="none" stroke="#b9473c" stroke-width="3"/>
+      <text y="12" text-anchor="middle" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#e7b6a8">KN</text>
+    </g>
+  </g>
+  <!-- fountain pen -->
+  <g transform="translate(1220 560) rotate(35)">
+    <rect x="0" y="0" width="300" height="34" rx="17" fill="#1f1a17"/>
+    <rect x="200" y="0" width="16" height="34" fill="#c9a24f"/>
+    <path d="M0 0 L-70 17 L0 34Z" fill="#c9a24f"/>
+  </g>
+  <!-- inkwell -->
+  <g transform="translate(1260 220)">
+    <rect x="-70" y="0" width="140" height="110" rx="14" fill="#2b3a44"/>
+    <rect x="-30" y="-30" width="60" height="34" rx="6" fill="#1f2a31"/>
+  </g>
+</svg>

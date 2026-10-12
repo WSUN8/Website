@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dfe3d3"/><stop offset="1" stop-color="#ecdcb6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <path d="M0 430 L250 340 L460 400 L700 300 L940 410 L1180 320 L1400 380 L1600 330 V900 H0Z" fill="#a6ad9c"/>
+  <!-- brick store -->
+  <g transform="translate(160 220)">
+    <rect width="760" height="440" fill="#9c4e34"/>
+    <g stroke="#7f3d28" stroke-width="2">
+      <path d="M0 40 H760 M0 80 H760 M0 120 H760 M0 160 H760 M0 200 H760 M0 240 H760 M0 280 H760 M0 320 H760 M0 360 H760 M0 400 H760"/>
+    </g>
+    <rect x="-20" y="-30" width="800" height="40" fill="#6e3523"/>
+    <rect x="80" y="30" width="600" height="70" fill="#1f3a2c"/>
+    <text x="380" y="78" text-anchor="middle" font-family="Georgia, serif" font-size="38" font-weight="700" letter-spacing="5" fill="#f2deb0">KENYON-NOBLE LUMBER CO.</text>
+    <rect x="60" y="170" width="220" height="180" fill="#2a2420"/>
+    <rect x="480" y="170" width="220" height="180" fill="#2a2420"/>
+    <rect x="320" y="200" width="120" height="240" fill="#3d2a1c"/>
+    <path d="M170 170 V350 M590 170 V350" stroke="#9c4e34" stroke-width="6"/>
+  </g>
+  <rect y="660" width="1600" height="240" fill="#8a8073"/>
+  <!-- Model T style truck -->
+  <g transform="translate(940 470)">
+    <!-- lumber load -->
+    <g fill="#e0b47a" stroke="#8a5c30" stroke-width="3">
+      <rect x="180" y="40" width="420" height="22"/>
+      <rect x="180" y="62" width="420" height="22"/>
+      <rect x="180" y="84" width="420" height="22"/>
+    </g>
+    <rect x="180" y="106" width="360" height="60" fill="#3b3a36"/>
+    <!-- cab -->
+    <path d="M20 60 H170 V166 H0 V110 Z" fill="#1f2422"/>
+    <rect x="40" y="70" width="110" height="50" fill="#bfc9c3"/>
+    <rect x="-60" y="110" width="80" height="56" fill="#1f2422"/>
+    <rect x="-70" y="120" width="14" height="40" fill="#b9a46a"/>
+    <!-- wheels -->
+    <g>
+      <circle cx="40" cy="180" r="52" fill="#1a1a1a"/><circle cx="40" cy="180" r="22" fill="#8a7a5a"/>
+      <circle cx="460" cy="180" r="52" fill="#1a1a1a"/><circle cx="460" cy="180" r="22" fill="#8a7a5a"/>
+    </g>
+  </g>
+  <rect width="1600" height="900" fill="#704214" opacity=".12"/>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e48a3c"/><stop offset=".55" stop-color="#f2b35b"/><stop offset="1" stop-color="#f6d59a"/>
+    </linearGradient>
+    <pattern id="bench" width="320" height="50" patternUnits="userSpaceOnUse">
+      <rect width="320" height="50" fill="#a8743f"/>
+      <path d="M0 12 Q80 4 160 14 T320 10 M0 36 Q90 28 180 40 T320 34" stroke="#8a5c30" stroke-width="3" fill="none"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="800" cy="470" r="200" fill="#fbe2a6" opacity=".85"/>
+  <g fill="none" stroke="#fbe2a6" stroke-width="10" opacity=".5">
+    <path d="M500 470 H1100 M540 420 H1060 M600 370 H1000"/>
+  </g>
+  <path d="M0 520 L200 420 L380 470 L560 380 L760 480 L960 390 L1160 470 L1380 400 L1600 460 V900 H0Z" fill="#7b4a2c"/>
+  <!-- workbench -->
+  <rect y="600" width="1600" height="300" fill="url(#bench)"/>
+  <rect y="600" width="1600" height="14" fill="#6b4426"/>
+  <!-- hammer -->
+  <g transform="translate(260 660) rotate(-12)">
+    <rect x="0" y="40" width="360" height="34" rx="12" fill="#c58b4e" stroke="#6b4426" stroke-width="4"/>
+    <path d="M330 0 H420 V40 Q460 40 470 110 Q430 80 420 74 V114 H330Z" fill="#5d6466" stroke="#2f3335" stroke-width="4"/>
+  </g>
+  <!-- level -->
+  <g transform="translate(820 720)">
+    <rect width="600" height="60" rx="6" fill="#e6c23f" stroke="#7a6418" stroke-width="4"/>
+    <rect x="260" y="14" width="80" height="32" rx="14" fill="#bfe2c8" stroke="#3b6b4a" stroke-width="3"/>
+    <circle cx="300" cy="30" r="9" fill="#f7f7e8"/>
+    <rect x="40" y="18" width="40" height="24" rx="4" fill="#7a6418"/>
+    <rect x="520" y="18" width="40" height="24" rx="4" fill="#7a6418"/>
+  </g>
+  <!-- tape measure -->
+  <g transform="translate(560 790)">
+    <rect x="-80" y="-70" width="150" height="140" rx="30" fill="#c2552f" stroke="#6e2c17" stroke-width="5"/>
+    <circle cx="-5" cy="0" r="34" fill="#9a3f20"/>
+    <rect x="68" y="35" width="220" height="24" fill="#f2d561" stroke="#7a6418" stroke-width="3"/>
+    <path d="M90 35 V48 M110 35 V44 M130 35 V48 M150 35 V44 M170 35 V48 M190 35 V44 M210 35 V48 M230 35 V44 M250 35 V48 M270 35 V44" stroke="#3b2a1c" stroke-width="3"/>
+  </g>
+</svg>
